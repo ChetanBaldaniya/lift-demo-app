@@ -1,0 +1,210 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+/* lift panel css */
+
+.building-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  height: 100vh;
+}
+
+.building {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
+.floor {
+  display: flex;
+  gap: 10px;
+  width: 600px;
+  justify-content: space-between;
+  background-color: #e74c3c;
+  align-items: center;
+  height: 60px;
+  border-bottom: 2px solid #fff;
+  padding: 10px;
+}
+
+.floor-box {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 10px;
+}
+
+.windows {
+  width: 50px;
+  height: 40px;
+  background-color: #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.windows div {
+  width: 20px;
+  height: 18px;
+  background-color: #fff;
+}
+
+.floor-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 18px;
+}
+
+.lift-shaft0 {
+  position: absolute;
+  right: 35px;
+  width: 60px;
+  height: 100%;
+  background-color: #2c3e50;
+}
+.lift-shaft1 {
+  position: absolute;
+  right: 110px;
+  width: 60px;
+  height: 100%;
+  background-color: #2c3e50;
+}
+.lift-shaft2 {
+  position: absolute;
+  right: 185px;
+  width: 60px;
+  height: 100%;
+  background-color: #2c3e50;
+}
+
+.lift {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 77px;
+  background-color: #bdc3c7;
+  border: 3px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: bottom 2s ease-in-out;
+}
+
+/* button panel css */
+
+.lift-panel {
+  width: 150px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.current-floor,
+.direction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.current-floor span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.direction span {
+  font-size: 24px;
+  color: #333;
+}
+
+.floor-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.floor-button {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  background: #f8f8f8;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.floor-button:hover {
+  background: #ddd;
+}
+
+.floor-button.selected {
+  border: 2px solid red;
+}
+
+.direction span.active {
+  color: red;
+  font-weight: bold;
+}
+
+/* Button style */
+.removeButton {
+  gap: 8px;
+  background-color: #8b7ce4;
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* select style */
+.liftSelect {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.liftSelect option {
+  font-size: 14px;
+  height: 50px;
+  padding: 10px;
+  color: #333;
+  background: #fff;
+}
